@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA0802671C33712C009C5B02 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0802661C33712C009C5B02 /* Reveal.framework */; };
+		DA2CA35B1C33D41A009F343D /* YPStyleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2CA35A1C33D41A009F343D /* YPStyleBtn.m */; };
 		DAD938041C3132170002F69B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938031C3132170002F69B /* main.m */; };
 		DAD9380D1C3132170002F69B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD9380B1C3132170002F69B /* Main.storyboard */; };
 		DAD9380F1C3132170002F69B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD9380E1C3132170002F69B /* Images.xcassets */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		DA0802661C33712C009C5B02 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		DA2CA3591C33D41A009F343D /* YPStyleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPStyleBtn.h; sourceTree = "<group>"; };
+		DA2CA35A1C33D41A009F343D /* YPStyleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPStyleBtn.m; sourceTree = "<group>"; };
 		DAD937FE1C3132170002F69B /* YPReusableController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPReusableController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD938021C3132170002F69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD938031C3132170002F69B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 				DAF307741C328DFE005D8CC6 /* YPContainerView.m */,
 				DAF307771C328EAF005D8CC6 /* UIScrollView+YPAdd.h */,
 				DAF307781C328EAF005D8CC6 /* UIScrollView+YPAdd.m */,
+				DA2CA3591C33D41A009F343D /* YPStyleBtn.h */,
+				DA2CA35A1C33D41A009F343D /* YPStyleBtn.m */,
 			);
 			path = YPReusableController;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 				DAD938371C3134380002F69B /* TestViewControllerOne.m in Sources */,
 				DAD9382D1C3132530002F69B /* ViewController.m in Sources */,
 				DAD938401C3134DF0002F69B /* TestViewControllerThree.m in Sources */,
+				DA2CA35B1C33D41A009F343D /* YPStyleBtn.m in Sources */,
 				DAD938491C3134F70002F69B /* TestViewControllerSix.m in Sources */,
 				DAD938461C3134EF0002F69B /* TestViewControllerFive.m in Sources */,
 				DAF3076D1C3287E2005D8CC6 /* YPStyleBar.m in Sources */,

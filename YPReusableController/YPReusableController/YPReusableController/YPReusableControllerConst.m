@@ -18,5 +18,5 @@ float YPDeviceSystemVersion() {
 }
 
 
-const CGFloat YPStyleBarHeight = 44.0f;
+const CGFloat YPStyleBarHeight = 64.0f;
 NSString *const YPKeyPathContentOffset = @"contentOffset";

@@ -42,6 +42,10 @@
     
     YPReusableController *resusableVc = [[YPReusableController alloc] initWithParentViewController:self];
     resusableVc.subViewControllers = @[oneVc,twoVc,threeVc,fourVc,fiveVc,sixVc];
+    
+    YPLog(@"%@",[UIFont familyNames]);
+    
+    resusableVc.textFont = [UIFont fontWithName:@"Cochin" size:18];
 }
 
 

@@ -17,6 +17,12 @@
 /** 构造方法 */
 - (instancetype)initWithParentViewController:(UIViewController *)parentViewController;
 
+/** 文字内边距 */
+@property (nonatomic, assign) CGFloat textInset;
+
+/** 文字字体 */
+@property (nonatomic, strong) UIFont *textFont;
+
 @end
 
 @interface UIViewController(YPReusableControllerExtension)

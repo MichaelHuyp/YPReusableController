@@ -19,8 +19,10 @@
 
 @interface YPReusableController ()
 
+/** 顶部索引条 */
 @property (nonatomic, weak) YPStyleBar *bar;
 
+/** 底部容器 */
 @property (nonatomic, weak) YPContainerView *containerView;
 
 @end
@@ -73,7 +75,6 @@
     
     containerView.yp_y = bar.yp_bottom;
     containerView.yp_height = YPScreenH - bar.yp_bottom;
-    
 
     
     return self;
@@ -96,6 +97,23 @@
         [titles addObject:vc.yp_Title];
     }
     
+    // 将标题数组赋值给bar
+    self.bar.items = titles;
+    
+}
+
+- (void)setTextInset:(CGFloat)textInset
+{
+    _textInset = textInset;
+    
+    self.bar.textInset = textInset;
+}
+
+- (void)setTextFont:(UIFont *)textFont
+{
+    _textFont = textFont;
+    
+    self.bar.textFont = textFont;
 }
 
 @end
