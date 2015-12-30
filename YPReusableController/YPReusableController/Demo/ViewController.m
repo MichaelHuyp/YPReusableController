@@ -7,6 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "YPReusableController.h"
+#import "TestViewControllerOne.h"
+#import "TestViewControllerTwo.h"
+#import "TestViewControllerThree.h"
+#import "TestViewControllerFour.h"
+#import "TestViewControllerFive.h"
+#import "TestViewControllerSix.h"
 
 @interface ViewController ()
 
@@ -16,12 +23,66 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    TestViewControllerOne *oneVc = [[TestViewControllerOne alloc] init];
+    oneVc.yp_Title = @"要闻";
+    TestViewControllerTwo *twoVc = [[TestViewControllerTwo alloc] init];
+    twoVc.yp_Title = @"视频";
+    TestViewControllerThree *threeVc = [[TestViewControllerThree alloc] init];
+    threeVc.yp_Title = @"北京";
+    TestViewControllerFour *fourVc = [[TestViewControllerFour alloc] init];
+    fourVc.yp_Title = @"辽宁";
+    TestViewControllerFive *fiveVc = [[TestViewControllerFive alloc] init];
+    fiveVc.yp_Title = @"财经";
+    TestViewControllerSix *sixVc = [[TestViewControllerSix alloc] init];
+    sixVc.yp_Title = @"娱乐";
+    TestViewControllerSix *sixVc1 = [[TestViewControllerSix alloc] init];
+    sixVc1.yp_Title = @"娱乐";
+    
+    
+    YPReusableController *resusableVc = [[YPReusableController alloc] initWithParentViewController:self];
+    resusableVc.subViewControllers = @[oneVc,twoVc,threeVc,fourVc,fiveVc,sixVc];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0802671C33712C009C5B02 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0802661C33712C009C5B02 /* Reveal.framework */; };
 		DAD938041C3132170002F69B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938031C3132170002F69B /* main.m */; };
 		DAD9380D1C3132170002F69B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD9380B1C3132170002F69B /* Main.storyboard */; };
 		DAD9380F1C3132170002F69B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD9380E1C3132170002F69B /* Images.xcassets */; };
@@ -14,6 +15,18 @@
 		DAD9381E1C3132170002F69B /* YPReusableControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD9381D1C3132170002F69B /* YPReusableControllerTests.m */; };
 		DAD9382C1C3132530002F69B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938291C3132530002F69B /* AppDelegate.m */; };
 		DAD9382D1C3132530002F69B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD9382B1C3132530002F69B /* ViewController.m */; };
+		DAD938311C3132EF0002F69B /* YPReusableControllerConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938301C3132EF0002F69B /* YPReusableControllerConst.m */; };
+		DAD938341C3134000002F69B /* YPReusableController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938331C3134000002F69B /* YPReusableController.m */; };
+		DAD938371C3134380002F69B /* TestViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938361C3134380002F69B /* TestViewControllerOne.m */; };
+		DAD9383A1C3134630002F69B /* TestViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938391C3134630002F69B /* TestViewControllerTwo.m */; };
+		DAD938401C3134DF0002F69B /* TestViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD9383F1C3134DF0002F69B /* TestViewControllerThree.m */; };
+		DAD938431C3134E70002F69B /* TestViewControllerFour.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938421C3134E70002F69B /* TestViewControllerFour.m */; };
+		DAD938461C3134EF0002F69B /* TestViewControllerFive.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938451C3134EF0002F69B /* TestViewControllerFive.m */; };
+		DAD938491C3134F70002F69B /* TestViewControllerSix.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938481C3134F70002F69B /* TestViewControllerSix.m */; };
+		DAF3076D1C3287E2005D8CC6 /* YPStyleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3076C1C3287E2005D8CC6 /* YPStyleBar.m */; };
+		DAF307701C328B96005D8CC6 /* UIView+YPAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3076F1C328B96005D8CC6 /* UIView+YPAdd.m */; };
+		DAF307751C328DFE005D8CC6 /* YPContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF307741C328DFE005D8CC6 /* YPContainerView.m */; };
+		DAF307791C328EAF005D8CC6 /* UIScrollView+YPAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF307781C328EAF005D8CC6 /* UIScrollView+YPAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0802661C33712C009C5B02 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		DAD937FE1C3132170002F69B /* YPReusableController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPReusableController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD938021C3132170002F69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD938031C3132170002F69B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +54,30 @@
 		DAD938291C3132530002F69B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DAD9382A1C3132530002F69B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DAD9382B1C3132530002F69B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAD9382F1C3132EF0002F69B /* YPReusableControllerConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPReusableControllerConst.h; sourceTree = "<group>"; };
+		DAD938301C3132EF0002F69B /* YPReusableControllerConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPReusableControllerConst.m; sourceTree = "<group>"; };
+		DAD938321C3134000002F69B /* YPReusableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPReusableController.h; sourceTree = "<group>"; };
+		DAD938331C3134000002F69B /* YPReusableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPReusableController.m; sourceTree = "<group>"; };
+		DAD938351C3134380002F69B /* TestViewControllerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerOne.h; sourceTree = "<group>"; };
+		DAD938361C3134380002F69B /* TestViewControllerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerOne.m; sourceTree = "<group>"; };
+		DAD938381C3134630002F69B /* TestViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerTwo.h; sourceTree = "<group>"; };
+		DAD938391C3134630002F69B /* TestViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerTwo.m; sourceTree = "<group>"; };
+		DAD9383E1C3134DF0002F69B /* TestViewControllerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerThree.h; sourceTree = "<group>"; };
+		DAD9383F1C3134DF0002F69B /* TestViewControllerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerThree.m; sourceTree = "<group>"; };
+		DAD938411C3134E70002F69B /* TestViewControllerFour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerFour.h; sourceTree = "<group>"; };
+		DAD938421C3134E70002F69B /* TestViewControllerFour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerFour.m; sourceTree = "<group>"; };
+		DAD938441C3134EF0002F69B /* TestViewControllerFive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerFive.h; sourceTree = "<group>"; };
+		DAD938451C3134EF0002F69B /* TestViewControllerFive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerFive.m; sourceTree = "<group>"; };
+		DAD938471C3134F70002F69B /* TestViewControllerSix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerSix.h; sourceTree = "<group>"; };
+		DAD938481C3134F70002F69B /* TestViewControllerSix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerSix.m; sourceTree = "<group>"; };
+		DAF3076B1C3287E2005D8CC6 /* YPStyleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPStyleBar.h; sourceTree = "<group>"; };
+		DAF3076C1C3287E2005D8CC6 /* YPStyleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPStyleBar.m; sourceTree = "<group>"; };
+		DAF3076E1C328B96005D8CC6 /* UIView+YPAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YPAdd.h"; sourceTree = "<group>"; };
+		DAF3076F1C328B96005D8CC6 /* UIView+YPAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YPAdd.m"; sourceTree = "<group>"; };
+		DAF307731C328DFE005D8CC6 /* YPContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPContainerView.h; sourceTree = "<group>"; };
+		DAF307741C328DFE005D8CC6 /* YPContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPContainerView.m; sourceTree = "<group>"; };
+		DAF307771C328EAF005D8CC6 /* UIScrollView+YPAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YPAdd.h"; sourceTree = "<group>"; };
+		DAF307781C328EAF005D8CC6 /* UIScrollView+YPAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YPAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0802671C33712C009C5B02 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 		DAD937F51C3132170002F69B = {
 			isa = PBXGroup;
 			children = (
+				DA0802661C33712C009C5B02 /* Reveal.framework */,
 				DAD938001C3132170002F69B /* YPReusableController */,
 				DAD9381A1C3132170002F69B /* YPReusableControllerTests */,
 				DAD937FF1C3132170002F69B /* Products */,
@@ -124,6 +164,18 @@
 				DAD938291C3132530002F69B /* AppDelegate.m */,
 				DAD9382A1C3132530002F69B /* ViewController.h */,
 				DAD9382B1C3132530002F69B /* ViewController.m */,
+				DAD938351C3134380002F69B /* TestViewControllerOne.h */,
+				DAD938361C3134380002F69B /* TestViewControllerOne.m */,
+				DAD938381C3134630002F69B /* TestViewControllerTwo.h */,
+				DAD938391C3134630002F69B /* TestViewControllerTwo.m */,
+				DAD9383E1C3134DF0002F69B /* TestViewControllerThree.h */,
+				DAD9383F1C3134DF0002F69B /* TestViewControllerThree.m */,
+				DAD938411C3134E70002F69B /* TestViewControllerFour.h */,
+				DAD938421C3134E70002F69B /* TestViewControllerFour.m */,
+				DAD938441C3134EF0002F69B /* TestViewControllerFive.h */,
+				DAD938451C3134EF0002F69B /* TestViewControllerFive.m */,
+				DAD938471C3134F70002F69B /* TestViewControllerSix.h */,
+				DAD938481C3134F70002F69B /* TestViewControllerSix.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -131,6 +183,18 @@
 		DAD9382E1C3132670002F69B /* YPReusableController */ = {
 			isa = PBXGroup;
 			children = (
+				DAD9382F1C3132EF0002F69B /* YPReusableControllerConst.h */,
+				DAD938301C3132EF0002F69B /* YPReusableControllerConst.m */,
+				DAD938321C3134000002F69B /* YPReusableController.h */,
+				DAD938331C3134000002F69B /* YPReusableController.m */,
+				DAF3076B1C3287E2005D8CC6 /* YPStyleBar.h */,
+				DAF3076C1C3287E2005D8CC6 /* YPStyleBar.m */,
+				DAF3076E1C328B96005D8CC6 /* UIView+YPAdd.h */,
+				DAF3076F1C328B96005D8CC6 /* UIView+YPAdd.m */,
+				DAF307731C328DFE005D8CC6 /* YPContainerView.h */,
+				DAF307741C328DFE005D8CC6 /* YPContainerView.m */,
+				DAF307771C328EAF005D8CC6 /* UIScrollView+YPAdd.h */,
+				DAF307781C328EAF005D8CC6 /* UIScrollView+YPAdd.m */,
 			);
 			path = YPReusableController;
 			sourceTree = "<group>";
@@ -235,9 +299,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD938341C3134000002F69B /* YPReusableController.m in Sources */,
+				DAF307751C328DFE005D8CC6 /* YPContainerView.m in Sources */,
+				DAD938371C3134380002F69B /* TestViewControllerOne.m in Sources */,
 				DAD9382D1C3132530002F69B /* ViewController.m in Sources */,
+				DAD938401C3134DF0002F69B /* TestViewControllerThree.m in Sources */,
+				DAD938491C3134F70002F69B /* TestViewControllerSix.m in Sources */,
+				DAD938461C3134EF0002F69B /* TestViewControllerFive.m in Sources */,
+				DAF3076D1C3287E2005D8CC6 /* YPStyleBar.m in Sources */,
+				DAF307701C328B96005D8CC6 /* UIView+YPAdd.m in Sources */,
+				DAD938431C3134E70002F69B /* TestViewControllerFour.m in Sources */,
+				DAD938311C3132EF0002F69B /* YPReusableControllerConst.m in Sources */,
+				DAD9383A1C3134630002F69B /* TestViewControllerTwo.m in Sources */,
 				DAD9382C1C3132530002F69B /* AppDelegate.m in Sources */,
 				DAD938041C3132170002F69B /* main.m in Sources */,
+				DAF307791C328EAF005D8CC6 /* UIScrollView+YPAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,8 +439,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = YPReusableController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -373,8 +458,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = YPReusableController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -432,6 +526,7 @@
 				DAD938231C3132170002F69B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAD938241C3132170002F69B /* Build configuration list for PBXNativeTarget "YPReusableControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +535,7 @@
 				DAD938261C3132170002F69B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
