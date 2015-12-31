@@ -17,7 +17,7 @@
 
 @end
 
-@interface YPReusableController ()
+@interface YPReusableController () <YPStyleBarDelegate>
 
 /** 顶部索引条 */
 @property (nonatomic, weak) YPStyleBar *bar;
@@ -48,6 +48,11 @@
     self.containerView.yp_height = height - self.bar.yp_bottom;
 }
 
+- (void)dealloc
+{
+    [self removeObservers];
+}
+
 #pragma mark - Public
 - (instancetype)initWithParentViewController:(UIViewController *)parentViewController
 {
@@ -64,6 +69,7 @@
     // bar
     YPStyleBar *bar = [[YPStyleBar alloc] init];
     self.bar = bar;
+    bar.myDelegate = self;
     bar.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:bar];
     
@@ -75,9 +81,32 @@
     
     containerView.yp_y = bar.yp_bottom;
     containerView.yp_height = YPScreenH - bar.yp_bottom;
-
+    
+    // 添加监听
+    [self addObservers];
     
     return self;
+}
+
+#pragma mark - KVO
+- (void)removeObservers
+{
+    [self.containerView removeObserver:self forKeyPath:YPKeyPathContentOffset];
+}
+
+- (void)addObservers
+{
+    NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
+    [self.containerView addObserver:self forKeyPath:YPKeyPathContentOffset options:options context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString*)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void*)context
+{
+    YPLog(@"%@",change);
+    if ([object isKindOfClass:[YPContainerView class]] && [keyPath isEqualToString:YPKeyPathContentOffset])
+    {
+        YPLog(@"%@",change);
+    }
 }
 
 
@@ -99,7 +128,6 @@
     
     // 将标题数组赋值给bar
     self.bar.items = titles;
-    
 }
 
 - (void)setTextInset:(CGFloat)textInset
@@ -121,6 +149,12 @@
     _textColor_normal = textColor_normal;
     
     self.bar.textColor_normal = textColor_normal;
+}
+
+#pragma mark - YPStyleBarDelegate
+- (void)itemDidSelectedWithIndex:(YPStyleBar *)navTabBar index:(NSUInteger)index
+{
+    YPLog(@"%@-%lu",navTabBar,index);
 }
 
 @end

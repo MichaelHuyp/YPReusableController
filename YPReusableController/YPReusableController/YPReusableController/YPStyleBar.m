@@ -21,6 +21,8 @@
 @property (nonatomic, weak) UIView *ellipseIndicateView;
 /** 保存所有Item文字高度的数组 */
 @property (nonatomic, strong) NSMutableArray *allItemTextHeightArr;
+/** 保存所有选项按钮的数组 */
+@property (nonatomic, strong) NSMutableArray *allItemBtnArr;
 
 @end
 
@@ -34,6 +36,14 @@
         _allItemTextHeightArr = [NSMutableArray array];
     }
     return _allItemTextHeightArr;
+}
+
+- (NSMutableArray *)allItemBtnArr
+{
+    if (!_allItemBtnArr) {
+        _allItemBtnArr = [NSMutableArray array];
+    }
+    return _allItemBtnArr;
 }
 
 #pragma mark - Override
@@ -162,6 +172,8 @@
         
         buttonX += [widths[index] floatValue];
         
+        [self.allItemBtnArr addObject:styleBtn];
+        
         if (index == widths.count - 1) {
             totalWidth = styleBtn.yp_right;
         }
@@ -186,6 +198,7 @@
     [self.itemContainerView addSubview:ellipseIndicateView];
     ellipseIndicateView.layer.cornerRadius = 10;
     ellipseIndicateView.backgroundColor = YPColor_RGBA(200, 200, 200, 0.3);
+    ellipseIndicateView.userInteractionEnabled = NO;
     ellipseIndicateView.hidden = NO;
     
     
@@ -200,6 +213,7 @@
 - (void)reloadData
 {
     // 清空旧数据
+    [self.allItemBtnArr removeAllObjects];
     [self.allItemTextHeightArr removeAllObjects];
     [self.itemContainerView removeAllSubviews];
     
@@ -224,9 +238,13 @@
     YPLog(@"右侧按钮被点击");
 }
 
-- (void)itemPressed:(UIButton *)button
+- (void)itemPressed:(YPStyleBtn *)button
 {
-    YPLog(@"中间按钮被点击拉");
+    NSUInteger index = [self.allItemBtnArr indexOfObject:button];
+    
+    if ([_myDelegate respondsToSelector:@selector(itemDidSelectedWithIndex:index:)]) {
+        [_myDelegate itemDidSelectedWithIndex:self index:index];
+    }
 }
 
 #pragma mark - setter

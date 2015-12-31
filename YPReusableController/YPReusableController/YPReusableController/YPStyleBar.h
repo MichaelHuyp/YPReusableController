@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "YPReusableControllerConst.h"
+@class YPStyleBar;
+
+@protocol YPStyleBarDelegate <NSObject>
+
+@optional
+/** 当选项被选择时候的回调代理方法 */
+- (void)itemDidSelectedWithIndex:(YPStyleBar *)navTabBar index:(NSUInteger)index;
+
+@end
 
 @interface YPStyleBar : UIView
+
+@property (nonatomic, assign) id<YPStyleBarDelegate> myDelegate;
 
 /** 标题数组 */
 @property (nonatomic, strong) NSMutableArray *items;
