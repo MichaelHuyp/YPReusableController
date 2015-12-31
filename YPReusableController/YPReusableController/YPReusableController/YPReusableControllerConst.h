@@ -30,6 +30,10 @@
 /** tabbar's height */
 #define YPTabBarH 49.0f
 
+#define YPPadding 8.0f
+#define YPPadding_2 16.0f
+#define YPPadding_3 24.0f
+
 /** NotificationCenter */
 #define YPNotificationCenter [NSNotificationCenter defaultCenter]
 
@@ -150,5 +154,6 @@ return objc_getAssociatedObject(self, @selector(_setter_:)); \
 #endif
 
 UIKIT_EXTERN const CGFloat YPStyleBarHeight;
+UIKIT_EXTERN const CGFloat YPStyleBarLeftOrRightBtnWH;
 
 UIKIT_EXTERN NSString *const YPKeyPathContentOffset;

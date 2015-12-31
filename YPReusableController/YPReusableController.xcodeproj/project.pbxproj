@@ -24,6 +24,7 @@
 		DAD938431C3134E70002F69B /* TestViewControllerFour.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938421C3134E70002F69B /* TestViewControllerFour.m */; };
 		DAD938461C3134EF0002F69B /* TestViewControllerFive.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938451C3134EF0002F69B /* TestViewControllerFive.m */; };
 		DAD938491C3134F70002F69B /* TestViewControllerSix.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD938481C3134F70002F69B /* TestViewControllerSix.m */; };
+		DAE6CBC21C34D9A30048F54E /* TestViewControllerSeven.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE6CBC11C34D9A30048F54E /* TestViewControllerSeven.m */; };
 		DAF3076D1C3287E2005D8CC6 /* YPStyleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3076C1C3287E2005D8CC6 /* YPStyleBar.m */; };
 		DAF307701C328B96005D8CC6 /* UIView+YPAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3076F1C328B96005D8CC6 /* UIView+YPAdd.m */; };
 		DAF307751C328DFE005D8CC6 /* YPContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF307741C328DFE005D8CC6 /* YPContainerView.m */; };
@@ -73,6 +74,8 @@
 		DAD938451C3134EF0002F69B /* TestViewControllerFive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerFive.m; sourceTree = "<group>"; };
 		DAD938471C3134F70002F69B /* TestViewControllerSix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerSix.h; sourceTree = "<group>"; };
 		DAD938481C3134F70002F69B /* TestViewControllerSix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerSix.m; sourceTree = "<group>"; };
+		DAE6CBC01C34D9A30048F54E /* TestViewControllerSeven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewControllerSeven.h; sourceTree = "<group>"; };
+		DAE6CBC11C34D9A30048F54E /* TestViewControllerSeven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerSeven.m; sourceTree = "<group>"; };
 		DAF3076B1C3287E2005D8CC6 /* YPStyleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPStyleBar.h; sourceTree = "<group>"; };
 		DAF3076C1C3287E2005D8CC6 /* YPStyleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPStyleBar.m; sourceTree = "<group>"; };
 		DAF3076E1C328B96005D8CC6 /* UIView+YPAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YPAdd.h"; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				DAD938451C3134EF0002F69B /* TestViewControllerFive.m */,
 				DAD938471C3134F70002F69B /* TestViewControllerSix.h */,
 				DAD938481C3134F70002F69B /* TestViewControllerSix.m */,
+				DAE6CBC01C34D9A30048F54E /* TestViewControllerSeven.h */,
+				DAE6CBC11C34D9A30048F54E /* TestViewControllerSeven.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				DAF307701C328B96005D8CC6 /* UIView+YPAdd.m in Sources */,
 				DAD938431C3134E70002F69B /* TestViewControllerFour.m in Sources */,
 				DAD938311C3132EF0002F69B /* YPReusableControllerConst.m in Sources */,
+				DAE6CBC21C34D9A30048F54E /* TestViewControllerSeven.m in Sources */,
 				DAD9383A1C3134630002F69B /* TestViewControllerTwo.m in Sources */,
 				DAD9382C1C3132530002F69B /* AppDelegate.m in Sources */,
 				DAD938041C3132170002F69B /* main.m in Sources */,

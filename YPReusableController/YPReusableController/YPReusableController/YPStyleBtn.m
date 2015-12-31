@@ -35,10 +35,6 @@
 }
 
 #pragma mark - Private
-- (void)prepare
-{
-    [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
-}
+- (void)prepare{}
 
 @end

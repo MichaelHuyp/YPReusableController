@@ -20,5 +20,8 @@
 /** 文字字体 */
 @property (nonatomic, strong) UIFont *textFont;
 
+/** 文字普通状态下的颜色 */
+@property (nonatomic, strong) UIColor *textColor_normal;
+
 
 @end

@@ -116,6 +116,13 @@
     self.bar.textFont = textFont;
 }
 
+- (void)setTextColor_normal:(UIColor *)textColor_normal
+{
+    _textColor_normal = textColor_normal;
+    
+    self.bar.textColor_normal = textColor_normal;
+}
+
 @end
 
 @implementation UIViewController (YPReusableControllerExtension)

@@ -14,6 +14,7 @@
 #import "TestViewControllerFour.h"
 #import "TestViewControllerFive.h"
 #import "TestViewControllerSix.h"
+#import "TestViewControllerSeven.h"
 
 @interface ViewController ()
 
@@ -36,16 +37,15 @@
     fiveVc.yp_Title = @"财经";
     TestViewControllerSix *sixVc = [[TestViewControllerSix alloc] init];
     sixVc.yp_Title = @"娱乐";
-    TestViewControllerSix *sixVc1 = [[TestViewControllerSix alloc] init];
-    sixVc1.yp_Title = @"娱乐";
+    TestViewControllerSeven *sevenVc = [[TestViewControllerSeven alloc] init];
+    sevenVc.yp_Title = @"科技";
     
     
     YPReusableController *resusableVc = [[YPReusableController alloc] initWithParentViewController:self];
-    resusableVc.subViewControllers = @[oneVc,twoVc,threeVc,fourVc,fiveVc,sixVc];
+    resusableVc.subViewControllers = @[oneVc,twoVc,threeVc,fourVc,fiveVc,sixVc,sevenVc];
     
-    YPLog(@"%@",[UIFont familyNames]);
+    resusableVc.textColor_normal = YPBlueColor;
     
-    resusableVc.textFont = [UIFont fontWithName:@"Cochin" size:18];
 }
 
 
